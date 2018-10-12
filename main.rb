@@ -15,7 +15,7 @@ town = {
   }
 }
 
-town[:residents].delete_at(1)
+town[:residents].delete("Belle")
 
 town[:castle][:guests] << "Belle"
 
@@ -34,8 +34,8 @@ lost_boys = [
   {name: 'The Twins', age: 9}
 ]
 
-lost_boys.each do |age|
-  puts "#{age[:age] + 30}"
+lost_boys.each do |boy|
+  puts "#{boy[:age] + 30}"
 end
 
 #5
@@ -55,7 +55,7 @@ class Animal
 	end 
 
 	def set_name(name)
-		@name = new_name
+		@name = name
 	end 
 
 	def greet
@@ -73,11 +73,11 @@ pumba.greet
 
 def toonify(accent, sentence)
 	if accent == "daffy"
-		sentence.gsub! 's', 'th'
+		sentence.gsub 's', 'th'
 	elsif accent == "elmer"
-		sentence.gsub! 'r', 'w'
+		sentence.gsub 'r', 'w'
 	elsif accent == "american"
-		sentence.gsub! 'r', 'rrr'
+		sentence.gsub 'r', 'rrr'
 	else 
 		sentence
 	end 
