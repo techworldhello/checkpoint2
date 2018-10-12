@@ -17,11 +17,8 @@ town = {
 
 town[:residents].delete_at(1)
 
-p town
-
 town[:castle][:guests] << "Belle"
 
-p town
 
 # 3
 friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
@@ -46,7 +43,6 @@ children = ['Wendy', 'John', 'Michael']
 
 darling_children = children.map { |name| "#{name} Darling"}
 
-p darling_children
 
 #6
 class Animal 
@@ -68,7 +64,7 @@ class Animal
 end 
 
 #7
-p pumba = Animal.new('Pumba')
+pumba = Animal.new('Pumba')
 
 pumba.greet
 
