@@ -37,6 +37,12 @@ lost_boys.each do |age|
   puts "#{age[:age] + 30}"
 end
 
+#5
+children = ['Wendy', 'John', 'Michael']
+
+darling_children = children.map { |name| "#{name} Darling"}
+
+p darling_children
 
 
 
