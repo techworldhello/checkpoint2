@@ -44,6 +44,23 @@ darling_children = children.map { |name| "#{name} Darling"}
 
 p darling_children
 
+#6
+class Animal 
+	def initialize(new_name)
+		@name = new_name
+	end 
+
+	def name
+		@name
+	end 
+
+	def greet
+		p "hi how are you doing"
+	end 
+end 
+
+
+
 
 
 
