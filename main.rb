@@ -17,7 +17,11 @@ town = {
 
 town[:residents].delete_at(1)
 
+p town
+
 town[:castle][:guests] << "Belle"
+
+p town
 
 # 3
 friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
@@ -50,8 +54,12 @@ class Animal
 		@name = new_name
 	end 
 
-	def name
+	def get_name
 		@name
+	end 
+
+	def set_name(name)
+		@name = new_name
 	end 
 
 	def greet
@@ -60,7 +68,9 @@ class Animal
 end 
 
 #7
-pumba = Animal.new('Pumba')
+p pumba = Animal.new('Pumba')
+
+pumba.greet
 
 
 #8
