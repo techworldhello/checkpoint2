@@ -19,4 +19,7 @@ town[:residents].delete_at(1)
 town[:castle][:guests] << "Belle"
 
 
+friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
+
+friends.each {|friend| p "Belle is friends with #{friend}" }
 
