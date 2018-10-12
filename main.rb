@@ -59,7 +59,8 @@ class Animal
 	end 
 end 
 
-
+#7
+pumba = Animal.new('Pumba')
 
 
 
